@@ -6,10 +6,10 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	color: #666;
+	color: #000;
 	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 14px;
-	line-height: 1.5em; 
+	font-size: 18px;
+	line-height: none;
 	background-color: #e2d8bd;
 	background-image: url(images/tooplate_body.jpg);
 	background-repeat: repeat;

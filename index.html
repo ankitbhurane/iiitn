@@ -28,17 +28,45 @@
         <div id="tooplate_sidebar">
 		
             <div id="header">
-                <h1>AAB    
-                IIITN</h1>
-            </div>    
+              <h>
+              <script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+
+
+</h2>
+
+
+          </div>    
 			
             <div id="menu">
                 <ul class="navigation">
                     <li><a href="#home" class="selected menu_01">Home</a></li>
                     <li><a href="#aboutus" class="menu_02">About Us</a></li>
                     <li><a href="#services" class="menu_03">Resources</a></li>
-                    <li><a href="#gallery" class="menu_04">Video Lectures &amp; Slides</a></li>
-                    <li><a href="#contactus" class="menu_05">Contact</a></li>
+                    <li><a href="#gallery_ECL101" class="menu_04">ECL101: Lectures &amp; Slides</a></li>
+                    <li><a href="#gallery_ECL201" class="menu_05">ECL201: Lectures &amp; Slides</a></li>
 					<li><a href="#contactus" class="menu_01">Contact</a></li>                    
                 </ul>
             </div>
@@ -49,9 +77,11 @@
             <div class="scrollContainer">
               <div class="panel" id="home">
                 <div class="content_section">
-                  <h2>ECL 101</h2>
+                  <h2>ECL 101 News and Updates</h2>
+                  
+                 
                   <ul class="service_list">
-                    <li><a href="#" class="service_one">Maecenas suscipit vulputate dui vel adipiscing</a></li>
+                    <li><a href="#" class="service_one"> Lecture 1 slides and videos lectures are now available <img src="images/new.gif" width="30" height="16" alt="new" /></a></li>
                     
                                         <li><a href="#" class="service_one">Maecenas suscipit vulputate dui vel adipiscing</a></li>
                     
@@ -70,7 +100,7 @@
                   </ul>
                 </div>
                 <div class="content_section last_section">
-                  <h2>ECL 201</h2>
+                  <h2>ECL 201 News and Updates</h2>
                   <ul class="service_list">
                     <li><a href="#" class="service_one">Maecenas suscipit vulputate dui vel adipiscing</a></li>
                     
@@ -107,35 +137,49 @@
               </div> <!-- end of aboutus -->
 			  
               <div class="panel" id="services">
-                <h1>Service Overview</h1>
-                <p><em>Nam at arcu libero, ut venenatis elit. Nulla eget risus turpis, non aliquet dui. Vivamus augue felis, ultricies elementum convallis non, ornare vitae urna. Morbi et nisi eros, ut venenatis ipsum. </em></p>
+                <h1>ECL 101 Resources</h1>
+                
                 <img src="images/tooplate_image_02.jpg" alt="Image" class="image_wrapper image_fr" />
-                <p>Sed eu libero quis neque laoreet cursus. Fusce elit metus, elementum nec consequat a, interdum vitae est. Aliquam sit amet odio vitae dui blandit elementum. Ut eu dolor nunc. Nam in nunc sed mi adipiscing lacinia suscipit eget tortor. Vivamus lacinia lectus in velit aliquet ac placerat magna euismod. In hac habitasse platea dictumst. Integer eget nibh eu libero cursus ultricies neque dolor imperdiet ligula, quis viverra tellus nulla a odio. Curabitur vitae enim risus, at placerat turpis. Mauris feugiat suscipit tempus fringilla, felis in velit. Phasellus quis volutpat dui.</p>
-				
-                <div class="cleaner_h20"></div>
-				
+                
+                
+                <p>
+                
                 <ul class="service_list">
                   <li><a href="#" class="service_one">Maecenas suscipit vulputate dui vel adipiscing</a></li>
-                  
-                  <li>
-                  
-                  </li>
-                  
-                  
-                  <li><a href="#" class="service_two">Pellentesque habitant morbi tristique senectus</a></li>
-                  
-                  
-                                    <li>
-                  
-                  </li>
                   
                   
                   <li><a href="#" class="service_three">Duis at sapien ut sapien commodo molestie</a></li>
                   <li><a href="#" class="service_four">Nam porttitor quam eu ante aliquam eu</a></li>
                   <li><a href="#" class="service_five">Maecenas posuere fringilla ipsum ut pretium</a></li>
                 </ul>
+
+                </p>
+
+                
+                
+                <h1>ECL 201 Resources</h1>
+   				
+                <img src="images/tooplate_image_02.jpg" alt="Image" class="image_wrapper image_fr" />
+                
+                
+                <p>
+                
+                <ul class="service_list">
+                  <li><a href="#" class="service_one">Maecenas suscipit vulputate dui vel adipiscing</a></li>
+                  
+                  
+                  <li><a href="#" class="service_three">Duis at sapien ut sapien commodo molestie</a></li>
+                  <li><a href="#" class="service_four">Nam porttitor quam eu ante aliquam eu</a></li>
+                  <li><a href="#" class="service_five">Maecenas posuere fringilla ipsum ut pretium</a></li>
+                </ul>
+
+                </p>
+                
               </div> <!-- end of services -->
-			  <div class="scroll11111" style="margin-left: 30px; margin-top: 9px; width: 500px; height: 630px; overflow-y: auto; overflow-x: hidden;">
+              
+<!-- ECL 101 -->             
+<div class="scroll11111" id="gallery_ECL101" style="margin-left: 30px; margin-top: 9px; width: 500px; height: 630px; overflow-y: auto; overflow-x: hidden;">
+<h1>ECL 101 Lectures</h1>
                                   <div style="width: 500px; height: 645px;">
 <div class="style50" style="margin-left: 0px; margin-top: 3px;">
  
@@ -143,7 +187,31 @@
   <ol>
   <li>Lecture 1<span class="Bliue">  (24 July 2017)<br>
    	<div>
-    	<p> <em> Introduction  </em></p>
+    	<p> <em> Introduction and ECL101 course details </em></p>
+        <a href="#"><img src="images/pen.png" alt="pen" /></a>
+        <a href="https://www.youtube.com/embed/2eTXpycl2HU?list=PL9omMCApA_HWcHkObUAULd7fOrrbL3MMW?ecver=2"><img src="images/video.png" alt="video" /></a>
+    </div>   
+
+
+  </ol>
+</div>
+   </div>
+</div>
+ 
+ 
+ 
+ 
+ <!-- ECL 201 -->   
+ <div class="scroll11111" id="gallery_ECL201" style="margin-left: 30px; margin-top: 9px; width: 500px; height: 630px; overflow-y: auto; overflow-x: hidden;">
+ <h1>ECL 201 Lectures</h1>
+                                  <div style="width: 500px; height: 645px;">
+<div class="style50" style="margin-left: 0px; margin-top: 3px;">
+ 
+      
+  <ol>
+  <li>Lecture 1<span class="Bliue">  (24 July 2017)<br>
+   	<div>
+    	<p> <em> Introduction and ECL201 course details  </em></p>
         <a href="#"><img src="images/pen.png" alt="pen" /></a>
         <a href="https://www.youtube.com/embed/2eTXpycl2HU?list=PL9omMCApA_HWcHkObUAULd7fOrrbL3MMW?ecver=2"><img src="images/video.png" alt="video" /></a>
     </div>   
@@ -152,13 +220,15 @@
   </ol>
 </div>
                                   </div>
-						      </div>
+		      </div>
 			  
          <p>
          
          
-         </p>     
-              
+         </p>
+ 
+ 
+ 
               
               <div class="panel" id="contactus">
                 <h1>Contact Information</h1>
@@ -167,7 +237,7 @@
 				
                 <div class="col_380 float_l">
                   <div id="contact_form">
-                    <form method="post" name="contact" action="#">
+                    <form method="post" name="contact" action="send_mail.php">
                       <label for="author">Name:</label>
                       <input type="text" maxlength="40" id="author" class="input_field" name="author" />
                       <div class="cleaner_h10"></div>
@@ -203,7 +273,7 @@
     
     <div id="footer_left">
 		
-		Copyright © 2048 <a href="#">Company Name</a><br />
+		Copyright © 2017 <a href="#">Ankit A. Bhurane</a><br />
 		Designed by <a href="http://www.tooplate.com">Free HTML Templates</a><br />
        
     </div>
